@@ -305,7 +305,7 @@ function setupScene(sceneNr = 1) {
         scene.gravity = 0.0;
         scene.showColor = true;
         scene.showSmoke = true;
-        scene.showStreamlines = false;
+        scene.showStreamlines = true;
         scene.showVelocities = false;
     }
 

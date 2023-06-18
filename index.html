@@ -13,7 +13,7 @@
 	<button class="button" id="startButton" onclick="togglePause()">Pause</button>
 	<button class="button" onclick="setupScene(1)">Reset</button>
 
-	<input type = "checkbox" id = "streamButton" onclick = "scene.showStreamlines = !scene.showStreamlines">Streamlines
+	<input type = "checkbox" id = "streamButton" onclick = "scene.showStreamlines = !scene.showStreamlines", checked>Streamlines
 	<input type = "checkbox" id = "velocityButton" onclick = "scene.showVelocities = !scene.showVelocities">Velocities
 	<input type = "checkbox" name = "field" id = "colorButton" onclick = "scene.showColor = !scene.showColor;" checked> Color
 	<input type="range" id="convergenceSlider" min="1.0" max="1.9" step="0.1" value="1.9" onchange="updateConvergenceRate(this.value)">
