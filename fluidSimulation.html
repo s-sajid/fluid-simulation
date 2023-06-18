@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<head>
+		<title>Fluid Simulation</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+<body>
+
+	<button class="button" id="startButton" onclick="togglePause()">Pause</button>
+	<button class="button" onclick="setupScene(1)">Reset</button>
+	
+	<input type = "checkbox" id = "streamButton" onclick = "scene.showStreamlines = !scene.showStreamlines">Streamlines
+	<input type = "checkbox" id = "velocityButton" onclick = "scene.showVelocities = !scene.showVelocities">Velocities
+	<input type = "checkbox" name = "field" id = "colorButton" onclick = "scene.showColor = !scene.showColor;" checked> Color
+	<input type="range" id="convergenceSlider" min="1.0" max="1.9" step="0.1" value="1.9" onchange="updateConvergenceRate(this.value)">
+    <label for="convergenceSlider">Convergence Rate: <span id="convergenceRate">1.9</span></label>
+	
+    <a href="https://github.com/s-sajid/fluid-simulation" target="_blank" class="github-link">
+        <img src="images/GitHub-Mark.png" alt="GitHub Icon" class="github-icon">
+    </a>
+
+	<canvas id="myCanvas"></canvas>
+
+<script src="scripts/simulator.js"></script> 
+
+</body>
+</html>
