@@ -8,3 +8,5 @@ This Eulerian simulation visualizes how a fluid behaves in a two-dimensional spa
 ![Project Screenshot 1](images/project_screenshot_1.PNG)
 
 ![Project Screenshot 2](images/project_screenshot_2.PNG)
+
+Project Reference: [Ten Minute Physics](https://github.com/matthias-research/pages/blob/master/tenMinutePhysics/17-fluidSim.html)
